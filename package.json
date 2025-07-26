@@ -1,0 +1,49 @@
+{
+  "name": "karmanlab",
+  "version": "1.0.0",
+  "description": "KarmaLab - 初中生学习物理、化学、数学的指引页面，提供友好的AI学习教练体验",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000",
+    "serve": "python -m http.server 8000",
+    "build": "echo 'Static site - no build required'",
+    "test": "echo 'No tests configured yet'"
+  },
+  "keywords": [
+    "education",
+    "learning",
+    "physics",
+    "chemistry",
+    "mathematics",
+    "middle-school",
+    "chinese",
+    "ai-coach",
+    "interactive",
+    "web-app"
+  ],
+  "author": "KarmaLab Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/username/karmanlab.git"
+  },
+  "homepage": ".",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "devDependencies": {},
+  "dependencies": {},
+  "files": [
+    "index.html",
+    "styles.css",
+    "script.js",
+    "README.md",
+    "CLAUDE.md"
+  ]
+}

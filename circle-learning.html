@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圆的学习 - KarmaLab</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="circle-styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">KarmaLab</h1>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">← 返回主页</a>
+                <span class="current-topic">📐 数学 · 圆</span>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- 学习教练导言 -->
+        <section class="coach-intro-section">
+            <div class="container">
+                <div class="coach-message-card">
+                    <div class="coach-avatar-small">🤖</div>
+                    <div class="coach-content">
+                        <h2>探索宇宙中最完美的图形！</h2>
+                        <p>作为你的数学教授，我要告诉你一个秘密：圆不仅仅是一个几何图形，它是宇宙的语言！从原子的轨道到行星的运动，从水滴的形状到时钟的表盘，圆无处不在。今天我们要像科学探索者一样，一步步揭开圆的神秘面纱。</p>
+                        <div class="professor-quote">
+                            <span class="quote-icon">💭</span>
+                            <em>"数学不是记忆公式，而是理解世界运行的规律。让我们用好奇心和逻辑思维去发现圆的美妙！"</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 学习进度指示器 -->
+        <section class="progress-section">
+            <div class="container">
+                <div class="learning-progress">
+                    <div class="progress-title">学习进度</div>
+                    <div class="progress-circles">
+                        <div class="progress-item active" data-section="basics">
+                            <div class="progress-circle">1</div>
+                            <span>基本概念</span>
+                        </div>
+                        <div class="progress-item" data-section="properties">
+                            <div class="progress-circle">2</div>
+                            <span>圆的性质</span>
+                        </div>
+                        <div class="progress-item" data-section="formulas">
+                            <div class="progress-circle">3</div>
+                            <span>公式计算</span>
+                        </div>
+                        <div class="progress-item" data-section="angles">
+                            <div class="progress-circle">4</div>
+                            <span>圆周角定理</span>
+                        </div>
+                        <div class="progress-item" data-section="inscribed">
+                            <div class="progress-circle">5</div>
+                            <span>内接四边形</span>
+                        </div>
+                        <div class="progress-item" data-section="positions">
+                            <div class="progress-circle">6</div>
+                            <span>位置关系</span>
+                        </div>
+                        <div class="progress-item" data-section="interactive">
+                            <div class="progress-circle">7</div>
+                            <span>互动练习</span>
+                        </div>
+                        <div class="progress-item" data-section="quiz">
+                            <div class="progress-circle">8</div>
+                            <span>知识测试</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第一部分：基本概念 -->
+        <section class="learning-section" id="basics">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">🔍 第一步：圆的本质探索</h2>
+                    <p class="section-subtitle">思考：为什么圆在自然界中如此常见？</p>
+                </div>
+
+                <!-- 引导性思考问题 -->
+                <div class="thinking-challenge">
+                    <div class="challenge-header">
+                        <h3>🤔 开始前的思考挑战</h3>
+                        <p>让我们像科学家一样思考几个有趣的问题：</p>
+                    </div>
+                    <div class="challenge-questions">
+                        <div class="question-card">
+                            <div class="question-number">1</div>
+                            <div class="question-content">
+                                <h4>为什么肥皂泡总是圆形的？</h4>
+                                <p class="hint">💡 提示：想想什么形状能用最少的材料包围最大的空间？</p>
+                            </div>
+                        </div>
+                        <div class="question-card">
+                            <div class="question-number">2</div>
+                            <div class="question-content">
+                                <h4>为什么车轮做成圆形而不是方形？</h4>
+                                <p class="hint">💡 提示：圆心到圆上任意一点的距离有什么特点？</p>
+                            </div>
+                        </div>
+                        <div class="question-card">
+                            <div class="question-number">3</div>
+                            <div class="question-content">
+                                <h4>为什么投石入水，波纹是圆形扩散的？</h4>
+                                <p class="hint">💡 提示：能量传播的方向性和距离有什么关系？</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 深度理解概念 -->
+                <div class="deep-concepts">
+                    <h3>🎯 圆的定义：不只是形状，更是一种数学关系</h3>
+                    
+                    <div class="concept-exploration">
+                        <div class="main-definition">
+                            <div class="definition-box">
+                                <h4>圆的数学定义</h4>
+                                <p class="definition-text">圆是平面上到定点距离等于定长的所有点的集合</p>
+                                <div class="definition-breakdown">
+                                    <div class="breakdown-item">
+                                        <span class="term">定点</span> → <span class="explanation">圆心(O)</span>
+                                    </div>
+                                    <div class="breakdown-item">
+                                        <span class="term">定长</span> → <span class="explanation">半径(r)</span>
+                                    </div>
+                                    <div class="breakdown-item">
+                                        <span class="term">所有点的集合</span> → <span class="explanation">圆周</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="real-world-examples">
+                            <h4>🌍 生活中的圆：从微观到宏观</h4>
+                            <div class="examples-grid">
+                                <div class="example-item">
+                                    <div class="example-icon">⚛️</div>
+                                    <h5>原子轨道</h5>
+                                    <p>电子绕原子核的轨道近似圆形，体现了自然界中能量最低原理</p>
+                                </div>
+                                <div class="example-item">
+                                    <div class="example-icon">🌊</div>
+                                    <h5>水滴形状</h5>
+                                    <p>表面张力使水滴趋向于球形（圆的3D形式），最小化表面积</p>
+                                </div>
+                                <div class="example-item">
+                                    <div class="example-icon">🪐</div>
+                                    <h5>行星轨道</h5>
+                                    <p>行星绕太阳的轨道接近椭圆，椭圆是圆的"表兄弟"</p>
+                                </div>
+                                <div class="example-item">
+                                    <div class="example-icon">📡</div>
+                                    <h5>雷达扫描</h5>
+                                    <p>雷达以圆形扫描，因为电磁波在均匀介质中等速传播</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 交互式发现 -->
+                <div class="interactive-discovery">
+                    <h3>🔬 动手发现：圆的构造原理</h3>
+                    <div class="discovery-tools">
+                        <div class="tool-explanation">
+                            <h4>用"绳子定理"理解圆</h4>
+                            <p>想象你有一根长度固定的绳子，一端固定在桌面上（这就是圆心），另一端绑上铅笔。当你保持绳子拉直并转动铅笔时，你画出的就是一个完美的圆！</p>
+                            <div class="insight-box">
+                                <strong>🧠 深度思考：</strong>这个过程揭示了圆的本质——所有点到中心的距离相等。这不是巧合，而是圆的定义本身！
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 可视化圆的构成 -->
+                <div class="visualization-card">
+                    <h3>🔍 圆的构成可视化</h3>
+                    <div class="circle-diagram">
+                        <svg width="300" height="300" viewBox="0 0 300 300">
+                            <!-- 圆 -->
+                            <circle cx="150" cy="150" r="100" fill="none" stroke="#3b82f6" stroke-width="3"/>
+                            <!-- 圆心 -->
+                            <circle cx="150" cy="150" r="4" fill="#ef4444"/>
+                            <!-- 半径 -->
+                            <line x1="150" y1="150" x2="220" y2="190" stroke="#10b981" stroke-width="2"/>
+                            <!-- 直径 -->
+                            <line x1="80" y1="120" x2="220" y2="180" stroke="#8b5cf6" stroke-width="2"/>
+                            <!-- 标签 -->
+                            <text x="155" y="145" fill="#ef4444" font-size="12">O</text>
+                            <text x="180" y="175" fill="#10b981" font-size="12">r</text>
+                            <text x="140" y="135" fill="#8b5cf6" font-size="12">d</text>
+                        </svg>
+                    </div>
+                    <div class="diagram-legend">
+                        <div class="legend-item">
+                            <div class="legend-color" style="background: #ef4444;"></div>
+                            <span>圆心 (O)</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background: #10b981;"></div>
+                            <span>半径 (r)</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background: #8b5cf6;"></div>
+                            <span>直径 (d)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="next-section-btn">
+                    <button class="btn-primary" onclick="circleCoach.nextSection('properties')">
+                        理解了基本概念，继续学习圆的性质 →
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第二部分：圆的性质 -->
+        <section class="learning-section hidden" id="properties">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">⚡ 第二步：圆的重要性质</h2>
+                    <p class="section-subtitle">掌握这些性质，你就能解决大部分圆的问题了！</p>
+                </div>
+
+                <div class="properties-grid">
+                    <div class="property-card">
+                        <div class="property-number">1</div>
+                        <h4>圆的对称性</h4>
+                        <p>圆既是轴对称图形（有无数条对称轴），也是中心对称图形</p>
+                        <div class="property-example">
+                            <strong>应用：</strong>这就是为什么车轮是圆形的！
+                        </div>
+                    </div>
+
+                    <div class="property-card">
+                        <div class="property-number">2</div>
+                        <h4>圆的唯一性</h4>
+                        <p>经过不在同一直线上的三个点，有且只有一个圆</p>
+                        <div class="property-example">
+                            <strong>应用：</strong>三点定圆，在工程测量中很重要！
+                        </div>
+                    </div>
+
+                    <div class="property-card">
+                        <div class="property-number">3</div>
+                        <h4>弦的性质</h4>
+                        <p>在同圆中，等弦对等弧，等弧对等弦</p>
+                        <div class="property-example">
+                            <strong>记忆：</strong>相等的弦"看到"相等的弧！
+                        </div>
+                    </div>
+
+                    <div class="property-card">
+                        <div class="property-number">4</div>
+                        <h4>垂径定理</h4>
+                        <p>垂直于弦的直径平分这条弦，并且平分弦所对的弧</p>
+                        <div class="property-example">
+                            <strong>应用：</strong>求弦长和圆心距的经典方法！
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 垂径定理的详细证明 -->
+                <div class="interactive-property">
+                    <h3>📐 垂径定理的严格几何证明</h3>
+                    
+                    <div class="perpendicular-theorem-proof">
+                        <div class="theorem-statement-box">
+                            <h4>🎯 定理陈述</h4>
+                            <p><strong>垂径定理：</strong>垂直于弦的直径平分这条弦，并且平分弦所对的弧</p>
+                        </div>
+
+                        <div class="proof-comprehensive">
+                            <div class="proof-diagram-large">
+                                <svg width="400" height="320" viewBox="0 0 400 320">
+                                    <!-- 圆 -->
+                                    <circle cx="200" cy="160" r="100" fill="none" stroke="#3b82f6" stroke-width="2"/>
+                                    <!-- 圆心 -->
+                                    <circle cx="200" cy="160" r="3" fill="#10b981"/>
+                                    <!-- 弦AB -->
+                                    <line x1="130" y1="100" x2="270" y2="220" stroke="#ef4444" stroke-width="3"/>
+                                    <circle cx="130" cy="100" r="3" fill="#ef4444"/>
+                                    <circle cx="270" cy="220" r="3" fill="#ef4444"/>
+                                    <!-- 直径CD（垂直平分弦AB） -->
+                                    <line x1="200" y1="60" x2="200" y2="260" stroke="#10b981" stroke-width="2"/>
+                                    <circle cx="200" cy="60" r="3" fill="#10b981"/>
+                                    <circle cx="200" cy="260" r="3" fill="#10b981"/>
+                                    <!-- 弦与直径的交点M -->
+                                    <circle cx="200" cy="160" r="4" fill="#8b5cf6"/>
+                                    <!-- 连接OA和OB -->
+                                    <line x1="200" y1="160" x2="130" y2="100" stroke="#666" stroke-width="1" stroke-dasharray="2,2"/>
+                                    <line x1="200" y1="160" x2="270" y2="220" stroke="#666" stroke-width="1" stroke-dasharray="2,2"/>
+                                    <!-- 垂直符号 -->
+                                    <path d="M 195 155 L 195 165 L 205 165" fill="none" stroke="#8b5cf6" stroke-width="2"/>
+                                    
+                                    <!-- 标签 -->
+                                    <text x="205" y="155" fill="#10b981" font-size="14" font-weight="bold">O</text>
+                                    <text x="120" y="95" fill="#ef4444" font-size="14" font-weight="bold">A</text>
+                                    <text x="275" y="235" fill="#ef4444" font-size="14" font-weight="bold">B</text>
+                                    <text x="205" y="55" fill="#10b981" font-size="14" font-weight="bold">C</text>
+                                    <text x="205" y="280" fill="#10b981" font-size="14" font-weight="bold">D</text>
+                                    <text x="205" y="175" fill="#8b5cf6" font-size="14" font-weight="bold">M</text>
+                                    
+                                    <!-- 弧标记 -->
+                                    <path d="M 130 100 A 100 100 0 0 0 200 60" fill="none" stroke="#f59e0b" stroke-width="3"/>
+                                    <path d="M 200 60 A 100 100 0 0 0 270 220" fill="none" stroke="#f97316" stroke-width="3"/>
+                                </svg>
+                            </div>
+
+                            <div class="proof-details">
+                                <div class="proof-given-prove">
+                                    <div class="given-section">
+                                        <strong>已知：</strong><br>
+                                        • ⊙O中，AB是弦<br>
+                                        • CD是直径，CD ⊥ AB于点M
+                                    </div>
+                                    <div class="prove-section">
+                                        <strong>求证：</strong><br>
+                                        • AM = BM（平分弦）<br>
+                                        • 弧AC = 弧BC（平分弧）
+                                    </div>
+                                </div>
+
+                                <div class="proof-method">
+                                    <h5>📋 证明方法：全等三角形</h5>
+                                    <div class="congruent-triangles">
+                                        <div class="triangle-proof">
+                                            <h6>Step 1: 构造全等三角形</h6>
+                                            <p>考虑△OAM和△OBM</p>
+                                            
+                                            <div class="conditions-list">
+                                                <div class="condition">✓ OA = OB（同圆半径相等）</div>
+                                                <div class="condition">✓ OM = OM（公共边）</div>
+                                                <div class="condition">✓ ∠OMA = ∠OMB = 90°（CD ⊥ AB）</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="triangle-proof">
+                                            <h6>Step 2: 全等判定</h6>
+                                            <p>根据 <strong>HL定理</strong>（直角三角形斜边和一条直角边对应相等）：</p>
+                                            <div class="congruence-result">
+                                                <strong>△OAM ≅ △OBM</strong>
+                                            </div>
+                                        </div>
+
+                                        <div class="triangle-proof">
+                                            <h6>Step 3: 得出结论</h6>
+                                            <div class="conclusions">
+                                                <p><strong>对应边相等：</strong>AM = BM（弦被平分）</p>
+                                                <p><strong>对应角相等：</strong>∠AOM = ∠BOM（圆心角相等）</p>
+                                                <p><strong>等圆心角对等弧：</strong>弧AC = 弧BC（弧被平分）</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="geometric-insight-box">
+                                    <h6>🧠 几何直觉</h6>
+                                    <p>为什么垂径定理成立？从对称性思考：</p>
+                                    <ul>
+                                        <li>圆本身具有完美的对称性</li>
+                                        <li>过圆心的直径是圆的对称轴</li>
+                                        <li>当这条对称轴垂直于弦时，弦的两部分必然关于对称轴对称</li>
+                                        <li>因此弦被平分，对应的弧也被平分</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="property-demo">
+                        <div class="demo-controls">
+                            <button class="demo-btn" onclick="circleCoach.animatePerpendicularTheorem()">
+                                🎯 动画演示垂径定理
+                            </button>
+                            <p class="demo-explanation">点击按钮看看垂直线如何平分弦和弧！</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="next-section-btn">
+                    <button class="btn-primary" onclick="circleCoach.nextSection('formulas')">
+                        掌握了性质，现在学习公式计算 →
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第三部分：公式计算 -->
+        <section class="learning-section hidden" id="formulas">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">📊 第三步：圆的重要公式</h2>
+                    <p class="section-subtitle">这些公式是解题的关键工具！</p>
+                </div>
+
+                <div class="formulas-grid">
+                    <div class="formula-card">
+                        <div class="formula-icon">📏</div>
+                        <h4>周长公式</h4>
+                        <div class="formula">C = 2πr = πd</div>
+                        <div class="formula-explanation">
+                            <p><strong>记忆口诀：</strong>"二派r，派d"</p>
+                            <p><strong>其中：</strong>π ≈ 3.14159...</p>
+                        </div>
+                        <div class="formula-example">
+                            <strong>例题：</strong>半径为5cm的圆，周长 = 2π×5 = 10π ≈ 31.4cm
+                        </div>
+                    </div>
+
+                    <div class="formula-card">
+                        <div class="formula-icon">🟦</div>
+                        <h4>面积公式</h4>
+                        <div class="formula">S = πr²</div>
+                        <div class="formula-explanation">
+                            <p><strong>记忆口诀：</strong>"派r方"</p>
+                            <p><strong>理解：</strong>面积和半径的平方成正比</p>
+                        </div>
+                        <div class="formula-example">
+                            <strong>例题：</strong>半径为3cm的圆，面积 = π×3² = 9π ≈ 28.3cm²
+                        </div>
+                    </div>
+
+                    <div class="formula-card">
+                        <div class="formula-icon">🌙</div>
+                        <h4>扇形弧长</h4>
+                        <div class="formula">l = (nπr)/180°</div>
+                        <div class="formula-explanation">
+                            <p><strong>其中：</strong>n是圆心角度数</p>
+                            <p><strong>比例思想：</strong>弧长与角度成正比</p>
+                        </div>
+                        <div class="formula-example">
+                            <strong>例题：</strong>半径4cm，圆心角90°的扇形弧长 = (90π×4)/180° = 2π ≈ 6.3cm
+                        </div>
+                    </div>
+
+                    <div class="formula-card">
+                        <div class="formula-icon">🍰</div>
+                        <h4>扇形面积</h4>
+                        <div class="formula">S扇 = (nπr²)/360°</div>
+                        <div class="formula-explanation">
+                            <p><strong>理解：</strong>扇形是圆的一部分</p>
+                            <p><strong>关系：</strong>S扇/S圆 = n°/360°</p>
+                        </div>
+                        <div class="formula-example">
+                            <strong>例题：</strong>半径6cm，圆心角60°的扇形面积 = (60π×6²)/360° = 6π ≈ 18.8cm²
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 公式计算器 -->
+                <div class="calculator-section">
+                    <h3>🧮 圆的公式计算器</h3>
+                    <div class="calculator-card">
+                        <div class="calculator-input">
+                            <label for="radius-input">输入半径 (r)：</label>
+                            <input type="number" id="radius-input" placeholder="请输入半径值" min="0" step="0.1">
+                            <span class="input-unit">cm</span>
+                        </div>
+                        <div class="calculator-results">
+                            <div class="result-item">
+                                <span class="result-label">直径 (d)：</span>
+                                <span class="result-value" id="diameter-result">-</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-label">周长 (C)：</span>
+                                <span class="result-value" id="circumference-result">-</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-label">面积 (S)：</span>
+                                <span class="result-value" id="area-result">-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="next-section-btn">
+                    <button class="btn-primary" onclick="circleCoach.nextSection('interactive')">
+                        理解了公式，来试试互动练习 →
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第四部分：互动练习 -->
+        <section class="learning-section hidden" id="interactive">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">🎮 第四步：互动练习</h2>
+                    <p class="section-subtitle">动手实践，加深理解！</p>
+                </div>
+
+                <!-- 圆形绘制工具 -->
+                <div class="interactive-tool">
+                    <h3>✏️ 圆形绘制工具</h3>
+                    <div class="drawing-section">
+                        <div class="canvas-container">
+                            <canvas id="circle-canvas" width="500" height="400"></canvas>
+                            <div class="canvas-info">
+                                <div class="info-item">
+                                    <span>半径：</span>
+                                    <span id="current-radius">0</span>
+                                </div>
+                                <div class="info-item">
+                                    <span>周长：</span>
+                                    <span id="current-circumference">0</span>
+                                </div>
+                                <div class="info-item">
+                                    <span>面积：</span>
+                                    <span id="current-area">0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="drawing-controls">
+                            <div class="control-group">
+                                <label>半径大小：</label>
+                                <input type="range" id="radius-slider" min="10" max="150" value="50">
+                                <span id="radius-value">50px</span>
+                            </div>
+                            <div class="control-group">
+                                <label>圆的颜色：</label>
+                                <input type="color" id="circle-color" value="#3b82f6">
+                            </div>
+                            <div class="control-buttons">
+                                <button class="btn-secondary" onclick="circleCoach.clearCanvas()">清空画布</button>
+                                <button class="btn-primary" onclick="circleCoach.drawRandomCircle()">随机圆形</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 拖拽练习 -->
+                <div class="drag-practice">
+                    <h3>🎯 概念匹配练习</h3>
+                    <div class="matching-game">
+                        <div class="concepts-column">
+                            <h4>概念</h4>
+                            <div class="concept-items">
+                                <div class="draggable-item" draggable="true" data-concept="radius">半径</div>
+                                <div class="draggable-item" draggable="true" data-concept="diameter">直径</div>
+                                <div class="draggable-item" draggable="true" data-concept="circumference">周长</div>
+                                <div class="draggable-item" draggable="true" data-concept="area">面积</div>
+                            </div>
+                        </div>
+                        <div class="formulas-column">
+                            <h4>公式</h4>
+                            <div class="formula-slots">
+                                <div class="drop-slot" data-answer="radius">从圆心到圆边的距离</div>
+                                <div class="drop-slot" data-answer="diameter">d = 2r</div>
+                                <div class="drop-slot" data-answer="circumference">C = 2πr</div>
+                                <div class="drop-slot" data-answer="area">S = πr²</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-feedback" id="matching-feedback"></div>
+                </div>
+
+        </section>
+
+        <!-- 第四部分：圆周角定理 -->
+        <section class="learning-section hidden" id="angles">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">📐 第四步：圆周角定理与应用</h2>
+                    <p class="section-subtitle">探索圆周角的神奇性质和实际应用</p>
+                </div>
+
+                <!-- 引入问题 -->
+                <div class="thinking-challenge">
+                    <div class="challenge-header">
+                        <h3>🤔 思考挑战：角度的奥秘</h3>
+                        <p>在日常生活中，我们经常遇到与角度相关的问题：</p>
+                    </div>
+                    <div class="challenge-questions">
+                        <div class="question-card">
+                            <div class="question-number">?</div>
+                            <div class="question-content">
+                                <h4>为什么站在圆形看台的任何位置，看舞台的视角都一样？</h4>
+                                <p class="hint">💡 这涉及到圆周角的重要性质</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 圆周角定理详解 -->
+                <div class="theorem-section">
+                    <h3>🎯 圆周角定理：数学中的美妙定律</h3>
+                    
+                    <div class="theorem-explanation">
+                        <div class="theorem-box">
+                            <h4>圆周角定理</h4>
+                            <p class="theorem-statement">在同一个圆中，同弧所对的圆周角相等，且等于圆心角的一半</p>
+                            <div class="theorem-formula">∠ACB = ∠ADB = ½∠AOB</div>
+                        </div>
+
+                        <div class="theorem-visualization">
+                            <h4>🎨 动态可视化</h4>
+                            <div class="interactive-demo" id="inscribed-angle-demo">
+                                <svg width="400" height="350" viewBox="0 0 400 350">
+                                    <!-- 圆 -->
+                                    <circle cx="200" cy="175" r="120" fill="none" stroke="#3b82f6" stroke-width="2"/>
+                                    <!-- 弧AB -->
+                                    <path d="M 120 120 A 120 120 0 0 1 280 120" fill="none" stroke="#ef4444" stroke-width="4"/>
+                                    <!-- 圆心角 -->
+                                    <line x1="200" y1="175" x2="120" y2="120" stroke="#10b981" stroke-width="2"/>
+                                    <line x1="200" y1="175" x2="280" y2="120" stroke="#10b981" stroke-width="2"/>
+                                    <!-- 圆周角1 -->
+                                    <line x1="150" y1="280" x2="120" y2="120" stroke="#8b5cf6" stroke-width="2"/>
+                                    <line x1="150" y1="280" x2="280" y2="120" stroke="#8b5cf6" stroke-width="2"/>
+                                    <!-- 圆周角2 -->
+                                    <line x1="250" y1="290" x2="120" y2="120" stroke="#f59e0b" stroke-width="2"/>
+                                    <line x1="250" y1="290" x2="280" y2="120" stroke="#f59e0b" stroke-width="2"/>
+                                    
+                                    <!-- 点标记 -->
+                                    <circle cx="200" cy="175" r="4" fill="#10b981"/>
+                                    <circle cx="120" cy="120" r="4" fill="#ef4444"/>
+                                    <circle cx="280" cy="120" r="4" fill="#ef4444"/>
+                                    <circle cx="150" cy="280" r="4" fill="#8b5cf6"/>
+                                    <circle cx="250" cy="290" r="4" fill="#f59e0b"/>
+                                    
+                                    <!-- 标签 -->
+                                    <text x="205" y="170" fill="#10b981" font-size="14">O</text>
+                                    <text x="110" y="115" fill="#ef4444" font-size="14">A</text>
+                                    <text x="285" y="115" fill="#ef4444" font-size="14">B</text>
+                                    <text x="140" y="295" fill="#8b5cf6" font-size="14">C</text>
+                                    <text x="255" y="305" fill="#f59e0b" font-size="14">D</text>
+                                    
+                                    <!-- 角度标记 -->
+                                    <text x="180" y="195" fill="#10b981" font-size="12">圆心角</text>
+                                    <text x="130" y="250" fill="#8b5cf6" font-size="12">圆周角1</text>
+                                    <text x="220" y="260" fill="#f59e0b" font-size="12">圆周角2</text>
+                                </svg>
+                            </div>
+                            <div class="demo-controls">
+                                <button class="demo-btn" onclick="circleCoach.animateInscribedAngle()">
+                                    🎯 演示圆周角定理
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 实际应用案例 -->
+                <div class="applications-section">
+                    <h3>🌍 圆周角定理的实际应用</h3>
+                    <div class="applications-grid">
+                        <div class="application-card">
+                            <div class="app-icon">🏛️</div>
+                            <h4>古代建筑</h4>
+                            <p>古罗马圆形斗兽场的设计利用圆周角原理，确保每个座位都能获得最佳观赏角度</p>
+                            <div class="app-detail">
+                                <strong>原理：</strong>观众席呈圆弧形分布，每个位置看向竞技场中心的视角基本相同
+                            </div>
+                        </div>
+                        
+                        <div class="application-card">
+                            <div class="app-icon">📐</div>
+                            <h4>工程测量</h4>
+                            <p>测量员利用圆周角定理来确定不可直接测量的角度和距离</p>
+                            <div class="app-detail">
+                                <strong>方法：</strong>通过测量圆周角，计算出对应的圆心角，进而求出弧长和面积
+                            </div>
+                        </div>
+                        
+                        <div class="application-card">
+                            <div class="app-icon">🎯</div>
+                            <h4>体育场设计</h4>
+                            <p>现代体育场的观众席设计遵循圆周角原理，优化观赛体验</p>
+                            <div class="app-detail">
+                                <strong>优势：</strong>无论坐在哪个位置，观看比赛的角度都是最佳的
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 深入理解：圆周角定理的完整证明 -->
+                <div class="deep-understanding">
+                    <h3>🧠 圆周角定理的严格几何证明</h3>
+                    <div class="proof-introduction">
+                        <div class="proof-overview">
+                            <h4>🎯 证明目标</h4>
+                            <p>证明：在同一个圆中，同弧所对的圆周角相等，且等于所对圆心角的一半</p>
+                            <div class="proof-strategy">
+                                <strong>证明策略：</strong>我们将分三种情况进行完整证明，体现数学推理的严谨性
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 情况一：圆心在圆周角内部 -->
+                    <div class="proof-case">
+                        <h4>📐 情况一：圆心O在圆周角∠ACB内部</h4>
+                        <div class="proof-visualization">
+                            <div class="proof-diagram">
+                                <svg width="350" height="280" viewBox="0 0 350 280">
+                                    <!-- 圆 -->
+                                    <circle cx="175" cy="140" r="100" fill="none" stroke="#3b82f6" stroke-width="2"/>
+                                    <!-- 弧AB -->
+                                    <path d="M 105 85 A 100 100 0 0 1 245 85" fill="none" stroke="#ef4444" stroke-width="4"/>
+                                    <!-- 圆心O -->
+                                    <circle cx="175" cy="140" r="3" fill="#10b981"/>
+                                    <!-- 点A, B, C -->
+                                    <circle cx="105" cy="85" r="3" fill="#ef4444"/>
+                                    <circle cx="245" cy="85" r="3" fill="#ef4444"/>
+                                    <circle cx="120" cy="220" r="3" fill="#8b5cf6"/>
+                                    <!-- 连线 -->
+                                    <line x1="175" y1="140" x2="105" y2="85" stroke="#10b981" stroke-width="2"/>
+                                    <line x1="175" y1="140" x2="245" y2="85" stroke="#10b981" stroke-width="2"/>
+                                    <line x1="175" y1="140" x2="120" y2="220" stroke="#10b981" stroke-width="2" stroke-dasharray="3,3"/>
+                                    <line x1="120" y1="220" x2="105" y2="85" stroke="#8b5cf6" stroke-width="2"/>
+                                    <line x1="120" y1="220" x2="245" y2="85" stroke="#8b5cf6" stroke-width="2"/>
+                                    <!-- 标签 -->
+                                    <text x="180" y="135" fill="#10b981" font-size="14" font-weight="bold">O</text>
+                                    <text x="95" y="80" fill="#ef4444" font-size="14" font-weight="bold">A</text>
+                                    <text x="250" y="80" fill="#ef4444" font-size="14" font-weight="bold">B</text>
+                                    <text x="105" y="235" fill="#8b5cf6" font-size="14" font-weight="bold">C</text>
+                                    <!-- 角度弧线 -->
+                                    <path d="M 160 125 A 20 20 0 0 1 190 125" fill="none" stroke="#f59e0b" stroke-width="2"/>
+                                    <path d="M 135 205 A 15 15 0 0 1 145 190" fill="none" stroke="#f59e0b" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="proof-explanation-text">
+                                <p><strong>构造辅助线：</strong>连接OC，将圆周角∠ACB分成两个角</p>
+                            </div>
+                        </div>
+
+                        <div class="proof-steps-detailed">
+                            <div class="proof-step-new">
+                                <div class="step-indicator">
+                                    <div class="step-number-new">1</div>
+                                    <div class="step-title">识别已知条件</div>
+                                </div>
+                                <div class="step-content-new">
+                                    <div class="given-conditions">
+                                        <div class="condition-item">
+                                            <span class="condition-label">已知：</span>
+                                            <span class="condition-text">⊙O中，弧AB，∠ACB是弧AB所对的圆周角</span>
+                                        </div>
+                                        <div class="condition-item">
+                                            <span class="condition-label">性质：</span>
+                                            <span class="condition-text">OA = OB = OC = r（半径相等）</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="proof-step-new">
+                                <div class="step-indicator">
+                                    <div class="step-number-new">2</div>
+                                    <div class="step-title">构造辅助线</div>
+                                </div>
+                                <div class="step-content-new">
+                                    <p><strong>作法：</strong>连接OC，将∠ACB分解为∠ACO + ∠OCB</p>
+                                    <div class="geometric-insight">
+                                        <strong>🔍 几何直觉：</strong>通过连接圆心与圆周角顶点，我们可以利用等腰三角形的性质
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="proof-step-new">
+                                <div class="step-indicator">
+                                    <div class="step-number-new">3</div>
+                                    <div class="step-title">分析等腰三角形</div>
+                                </div>
+                                <div class="step-content-new">
+                                    <div class="triangle-analysis">
+                                        <div class="triangle-info">
+                                            <h5>△OAC中：</h5>
+                                            <p>∵ OA = OC（半径）</p>
+                                            <p>∴ △OAC是等腰三角形</p>
+                                            <p>∴ ∠OAC = ∠OCA = α</p>
+                                        </div>
+                                        <div class="triangle-info">
+                                            <h5>△OBC中：</h5>
+                                            <p>∵ OB = OC（半径）</p>
+                                            <p>∴ △OBC是等腰三角形</p>
+                                            <p>∴ ∠OBC = ∠OCB = β</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="proof-step-new">
+                                <div class="step-indicator">
+                                    <div class="step-number-new">4</div>
+                                    <div class="step-title">利用三角形内角和</div>
+                                </div>
+                                <div class="step-content-new">
+                                    <div class="angle-calculation">
+                                        <div class="calc-step">
+                                            <p>在△OAC中：∠AOC + ∠OAC + ∠OCA = 180°</p>
+                                            <p>∴ ∠AOC + α + α = 180°</p>
+                                            <p>∴ ∠AOC = 180° - 2α</p>
+                                        </div>
+                                        <div class="calc-step">
+                                            <p>在△OBC中：∠BOC + ∠OBC + ∠OCB = 180°</p>
+                                            <p>∴ ∠BOC + β + β = 180°</p>
+                                            <p>∴ ∠BOC = 180° - 2β</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="proof-step-new">
+                                <div class="step-indicator">
+                                    <div class="step-number-new">5</div>
+                                    <div class="step-title">建立角度关系</div>
+                                </div>
+                                <div class="step-content-new">
+                                    <div class="final-calculation">
+                                        <div class="calc-line">
+                                            <span class="calc-label">圆心角：</span>
+                                            <span class="calc-formula">∠AOB = ∠AOC + ∠COB = (180° - 2α) + (180° - 2β) = 360° - 2(α + β)</span>
+                                        </div>
+                                        <div class="calc-line">
+                                            <span class="calc-label">圆周角：</span>
+                                            <span class="calc-formula">∠ACB = ∠ACO + ∠OCB = α + β</span>
+                                        </div>
+                                        <div class="conclusion">
+                                            <strong>∴ ∠ACB = ½∠AOB</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 情况二：圆心在圆周角边上 -->
+                    <div class="proof-case">
+                        <h4>📐 情况二：圆心O在圆周角的一边上</h4>
+                        <div class="proof-visualization">
+                            <div class="proof-diagram">
+                                <svg width="350" height="280" viewBox="0 0 350 280">
+                                    <!-- 圆 -->
+                                    <circle cx="175" cy="140" r="100" fill="none" stroke="#3b82f6" stroke-width="2"/>
+                                    <!-- 弧AB -->
+                                    <path d="M 105 85 A 100 100 0 0 1 245 85" fill="none" stroke="#ef4444" stroke-width="4"/>
+                                    <!-- 圆心O -->
+                                    <circle cx="175" cy="140" r="3" fill="#10b981"/>
+                                    <!-- 点A, B, C (C在OA延长线上) -->
+                                    <circle cx="105" cy="85" r="3" fill="#ef4444"/>
+                                    <circle cx="245" cy="85" r="3" fill="#ef4444"/>
+                                    <circle cx="75" cy="240" r="3" fill="#8b5cf6"/>
+                                    <!-- 连线 -->
+                                    <line x1="175" y1="140" x2="105" y2="85" stroke="#10b981" stroke-width="2"/>
+                                    <line x1="175" y1="140" x2="245" y2="85" stroke="#10b981" stroke-width="2"/>
+                                    <line x1="75" y1="240" x2="105" y2="85" stroke="#8b5cf6" stroke-width="2"/>
+                                    <line x1="75" y1="240" x2="245" y2="85" stroke="#8b5cf6" stroke-width="2"/>
+                                    <line x1="175" y1="140" x2="75" y2="240" stroke="#10b981" stroke-width="2" stroke-dasharray="3,3"/>
+                                    <!-- 标签 -->
+                                    <text x="180" y="135" fill="#10b981" font-size="14" font-weight="bold">O</text>
+                                    <text x="95" y="80" fill="#ef4444" font-size="14" font-weight="bold">A</text>
+                                    <text x="250" y="80" fill="#ef4444" font-size="14" font-weight="bold">B</text>
+                                    <text x="60" y="255" fill="#8b5cf6" font-size="14" font-weight="bold">C</text>
+                                </svg>
+                            </div>
+                            <div class="proof-explanation-text">
+                                <p><strong>特殊情况：</strong>当圆心O在∠ACB的一边CA上时</p>
+                            </div>
+                        </div>
+
+                        <div class="special-case-proof">
+                            <div class="proof-step-simple">
+                                <h5>推理过程：</h5>
+                                <div class="reasoning-steps">
+                                    <p>1. ∵ OB = OC（半径），∴ △OBC是等腰三角形</p>
+                                    <p>2. ∴ ∠OBC = ∠OCB = ∠ACB</p>
+                                    <p>3. 在△OBC中：∠BOC + 2∠ACB = 180°</p>
+                                    <p>4. ∴ ∠ACB = (180° - ∠BOC)/2 = 90° - ∠BOC/2</p>
+                                    <p>5. ∵ ∠AOB = 180° - ∠BOC，∴ ∠ACB = ½∠AOB</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 情况三：圆心在圆周角外部 -->
+                    <div class="proof-case">
+                        <h4>📐 情况三：圆心O在圆周角外部</h4>
+                        <div class="proof-visualization">
+                            <div class="proof-diagram">
+                                <svg width="350" height="280" viewBox="0 0 350 280">
+                                    <!-- 圆 -->
+                                    <circle cx="175" cy="140" r="100" fill="none" stroke="#3b82f6" stroke-width="2"/>
+                                    <!-- 弧AB -->
+                                    <path d="M 105 85 A 100 100 0 0 1 245 85" fill="none" stroke="#ef4444" stroke-width="4"/>
+                                    <!-- 圆心O -->
+                                    <circle cx="175" cy="140" r="3" fill="#10b981"/>
+                                    <!-- 点A, B, C -->
+                                    <circle cx="105" cy="85" r="3" fill="#ef4444"/>
+                                    <circle cx="245" cy="85" r="3" fill="#ef4444"/>
+                                    <circle cx="90" cy="200" r="3" fill="#8b5cf6"/>
+                                    <!-- 连线 -->
+                                    <line x1="175" y1="140" x2="105" y2="85" stroke="#10b981" stroke-width="2"/>
+                                    <line x1="175" y1="140" x2="245" y2="85" stroke="#10b981" stroke-width="2"/>
+                                    <line x1="175" y1="140" x2="90" y2="200" stroke="#10b981" stroke-width="2" stroke-dasharray="3,3"/>
+                                    <line x1="90" y1="200" x2="105" y2="85" stroke="#8b5cf6" stroke-width="2"/>
+                                    <line x1="90" y1="200" x2="245" y2="85" stroke="#8b5cf6" stroke-width="2"/>
+                                    <!-- 标签 -->
+                                    <text x="180" y="135" fill="#10b981" font-size="14" font-weight="bold">O</text>
+                                    <text x="95" y="80" fill="#ef4444" font-size="14" font-weight="bold">A</text>
+                                    <text x="250" y="80" fill="#ef4444" font-size="14" font-weight="bold">B</text>
+                                    <text x="75" y="215" fill="#8b5cf6" font-size="14" font-weight="bold">C</text>
+                                </svg>
+                            </div>
+                            <div class="proof-explanation-text">
+                                <p><strong>复杂情况：</strong>利用角度的减法关系证明</p>
+                            </div>
+                        </div>
+
+                        <div class="complex-case-proof">
+                            <div class="proof-step-simple">
+                                <h5>推理过程：</h5>
+                                <div class="reasoning-steps">
+                                    <p>1. 连接OC，∠ACB = ∠OCB - ∠OCA</p>
+                                    <p>2. 在等腰△OBC中：∠OCB = (180° - ∠BOC)/2</p>
+                                    <p>3. 在等腰△OAC中：∠OCA = (180° - ∠AOC)/2</p>
+                                    <p>4. ∴ ∠ACB = (180° - ∠BOC)/2 - (180° - ∠AOC)/2</p>
+                                    <p>5. = (∠AOC - ∠BOC)/2 = ∠AOB/2</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 定理总结 -->
+                    <div class="theorem-conclusion">
+                        <h4>🎯 定理证明完成</h4>
+                        <div class="conclusion-summary">
+                            <div class="main-conclusion">
+                                <h5>结论：</h5>
+                                <p>通过对三种情况的完整分析，我们严格证明了：</p>
+                                <div class="final-theorem">
+                                    <strong>在同一个圆中，同弧所对的圆周角相等，且等于所对圆心角的一半</strong>
+                                </div>
+                            </div>
+                            <div class="mathematical-significance">
+                                <h5>🧠 数学意义：</h5>
+                                <p>这个证明展示了几何推理的完整性：我们必须考虑所有可能的情况，确保结论的普遍适用性。这种分类讨论的方法是数学证明中的重要思想。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第五部分：圆内接四边形 -->
+        <section class="learning-section hidden" id="inscribed">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">⬜ 第五步：圆内接四边形的性质</h2>
+                    <p class="section-subtitle">探索四边形与圆的美妙关系</p>
+                </div>
+
+                <!-- 概念引入 -->
+                <div class="concept-introduction">
+                    <h3>🔍 什么是圆内接四边形？</h3>
+                    <div class="concept-explanation">
+                        <div class="definition-card">
+                            <h4>定义</h4>
+                            <p>如果一个四边形的四个顶点都在同一个圆上，这个四边形叫做圆内接四边形，这个圆叫做四边形的外接圆。</p>
+                        </div>
+                        
+                        <div class="real-world-connection">
+                            <h4>🌍 生活中的圆内接四边形</h4>
+                            <div class="examples-row">
+                                <div class="example-mini">
+                                    <div class="icon">🏠</div>
+                                    <p>建筑窗框设计</p>
+                                </div>
+                                <div class="example-mini">
+                                    <div class="icon">⚽</div>
+                                    <p>足球表面的多边形</p>
+                                </div>
+                                <div class="example-mini">
+                                    <div class="icon">💎</div>
+                                    <p>珠宝切割工艺</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 重要定理 -->
+                <div class="theorems-section">
+                    <h3>📐 圆内接四边形的重要定理</h3>
+                    
+                    <div class="theorem-cards">
+                        <div class="theorem-card">
+                            <div class="theorem-number">定理1</div>
+                            <div class="theorem-content">
+                                <h4>对角互补定理</h4>
+                                <p class="theorem-text">圆内接四边形的对角互补（相加等于180°）</p>
+                                <div class="theorem-formula">∠A + ∠C = 180°, ∠B + ∠D = 180°</div>
+                                
+                                <!-- 详细证明过程 -->
+                                <div class="detailed-proof">
+                                    <h5>🔍 严格几何证明：</h5>
+                                    
+                                    <div class="proof-setup">
+                                        <div class="proof-diagram-small">
+                                            <svg width="200" height="200" viewBox="0 0 200 200">
+                                                <!-- 圆 -->
+                                                <circle cx="100" cy="100" r="80" fill="none" stroke="#3b82f6" stroke-width="2"/>
+                                                <!-- 内接四边形ABCD -->
+                                                <circle cx="100" cy="30" r="3" fill="#ef4444"/>
+                                                <circle cx="160" cy="80" r="3" fill="#ef4444"/>
+                                                <circle cx="120" cy="170" r="3" fill="#ef4444"/>
+                                                <circle cx="50" cy="130" r="3" fill="#ef4444"/>
+                                                <!-- 连线形成四边形 -->
+                                                <line x1="100" y1="30" x2="160" y2="80" stroke="#8b5cf6" stroke-width="2"/>
+                                                <line x1="160" y1="80" x2="120" y2="170" stroke="#8b5cf6" stroke-width="2"/>
+                                                <line x1="120" y1="170" x2="50" y2="130" stroke="#8b5cf6" stroke-width="2"/>
+                                                <line x1="50" y1="130" x2="100" y2="30" stroke="#8b5cf6" stroke-width="2"/>
+                                                <!-- 弧标记 -->
+                                                <path d="M 100 30 A 80 80 0 0 1 160 80" fill="none" stroke="#f59e0b" stroke-width="3"/>
+                                                <path d="M 120 170 A 80 80 0 1 1 50 130" fill="none" stroke="#10b981" stroke-width="3"/>
+                                                <!-- 标签 -->
+                                                <text x="105" y="25" fill="#ef4444" font-size="12" font-weight="bold">A</text>
+                                                <text x="165" y="75" fill="#ef4444" font-size="12" font-weight="bold">B</text>
+                                                <text x="125" y="185" fill="#ef4444" font-size="12" font-weight="bold">C</text>
+                                                <text x="40" y="125" fill="#ef4444" font-size="12" font-weight="bold">D</text>
+                                            </svg>
+                                        </div>
+                                        <div class="proof-given">
+                                            <strong>已知：</strong>四边形ABCD内接于⊙O<br>
+                                            <strong>求证：</strong>∠A + ∠C = 180°, ∠B + ∠D = 180°
+                                        </div>
+                                    </div>
+
+                                    <div class="proof-steps-compact">
+                                        <div class="proof-step-compact">
+                                            <div class="step-num">1</div>
+                                            <div class="step-text">
+                                                <strong>分析角与弧的关系：</strong><br>
+                                                ∠A是弧BCD的圆周角，∠C是弧DAB的圆周角
+                                            </div>
+                                        </div>
+
+                                        <div class="proof-step-compact">
+                                            <div class="step-num">2</div>
+                                            <div class="step-text">
+                                                <strong>利用圆周角定理：</strong><br>
+                                                圆周角等于所对圆心角的一半<br>
+                                                ∠A = ½×圆心角(对弧BCD)，∠C = ½×圆心角(对弧DAB)
+                                            </div>
+                                        </div>
+
+                                        <div class="proof-step-compact">
+                                            <div class="step-num">3</div>
+                                            <div class="step-text">
+                                                <strong>弧度分析：</strong><br>
+                                                弧BCD + 弧DAB = 整个圆周 = 360°<br>
+                                                所以对应的圆心角之和也是360°
+                                            </div>
+                                        </div>
+
+                                        <div class="proof-step-compact">
+                                            <div class="step-num">4</div>
+                                            <div class="step-text">
+                                                <strong>得出结论：</strong><br>
+                                                ∠A + ∠C = ½×圆心角(弧BCD) + ½×圆心角(弧DAB)<br>
+                                                = ½×(圆心角之和) = ½×360° = 180°
+                                            </div>
+                                        </div>
+
+                                        <div class="proof-step-compact">
+                                            <div class="step-num">5</div>
+                                            <div class="step-text">
+                                                <strong>同理可证：</strong><br>
+                                                ∠B + ∠D = 180°（∠B对弧ACD，∠D对弧ABC）
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="proof-conclusion-box">
+                                        <strong>🎯 证明完成：</strong>圆内接四边形的对角互补<br>
+                                        <em>关键思想：圆周角定理 + 圆的弧度关系</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="theorem-card">
+                            <div class="theorem-number">定理2</div>
+                            <div class="theorem-content">
+                                <h4>托勒密定理</h4>
+                                <p class="theorem-text">圆内接四边形中，对边乘积之和等于对角线乘积</p>
+                                <div class="theorem-formula">AC × BD = AB × CD + AD × BC</div>
+                                <div class="theorem-application">
+                                    <strong>应用：</strong>古代天文学家用此定理计算天体运行轨迹
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 判定方法 -->
+                <div class="determination-section">
+                    <h3>🔍 如何判断四边形是否为圆内接四边形？</h3>
+                    <div class="methods-grid">
+                        <div class="method-card">
+                            <div class="method-icon">📐</div>
+                            <h4>方法一：对角互补</h4>
+                            <p>如果四边形的对角互补，则它是圆内接四边形</p>
+                            <div class="method-example">
+                                <strong>例：</strong>若∠A + ∠C = 180°且∠B + ∠D = 180°，则四边形ABCD内接于圆
+                            </div>
+                        </div>
+                        
+                        <div class="method-card">
+                            <div class="method-icon">🎯</div>
+                            <h4>方法二：同弧圆周角</h4>
+                            <p>如果四边形的一边所对的两个角相等，则它是圆内接四边形</p>
+                            <div class="method-example">
+                                <strong>例：</strong>若∠A = ∠C（都是弧BD的圆周角），则四边形内接于圆
+                            </div>
+                        </div>
+                        
+                        <div class="method-card">
+                            <div class="method-icon">📏</div>
+                            <h4>方法三：外心存在</h4>
+                            <p>如果能找到一点到四个顶点距离相等，则四边形内接于以该点为圆心的圆</p>
+                            <div class="method-example">
+                                <strong>构造：</strong>作两边的垂直平分线，交点即为外心
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 实际应用 -->
+                <div class="practical-applications">
+                    <h3>🏗️ 圆内接四边形在工程中的应用</h3>
+                    <div class="engineering-examples">
+                        <div class="engineering-card">
+                            <div class="eng-visual">🌉</div>
+                            <h4>桥梁拱形设计</h4>
+                            <p>桥梁的拱形结构常采用圆弧形，支撑点形成的四边形需要满足圆内接条件以确保结构稳定性。</p>
+                            <div class="engineering-principle">
+                                <strong>原理：</strong>圆内接四边形的对角互补性质确保了力的均匀分布
+                            </div>
+                        </div>
+                        
+                        <div class="engineering-card">
+                            <div class="eng-visual">🏢</div>
+                            <h4>建筑圆顶设计</h4>
+                            <p>大型建筑的圆顶结构，其支撑框架的四边形截面必须内接于圆，以保证承重均匀。</p>
+                            <div class="engineering-principle">
+                                <strong>优势：</strong>最大化空间利用率，同时保证结构强度
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第六部分：位置关系 -->
+        <section class="learning-section hidden" id="positions">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">📊 第六步：点线与圆的位置关系</h2>
+                    <p class="section-subtitle">理解空间中的几何关系</p>
+                </div>
+
+                <!-- 点和圆的位置关系 -->
+                <div class="position-analysis">
+                    <h3>📍 点和圆的位置关系</h3>
+                    <div class="position-types">
+                        <div class="position-card">
+                            <div class="position-visual">
+                                <svg width="150" height="150" viewBox="0 0 150 150">
+                                    <circle cx="75" cy="75" r="50" fill="none" stroke="#3b82f6" stroke-width="2"/>
+                                    <circle cx="75" cy="75" r="2" fill="#ef4444"/>
+                                    <text x="80" y="80" fill="#ef4444" font-size="12">P</text>
+                                </svg>
+                            </div>
+                            <h4>点在圆内</h4>
+                            <p>当 d < r 时，点在圆内</p>
+                            <div class="condition">d：点到圆心距离<br>r：圆的半径</div>
+                        </div>
+
+                        <div class="position-card">
+                            <div class="position-visual">
+                                <svg width="150" height="150" viewBox="0 0 150 150">
+                                    <circle cx="75" cy="75" r="50" fill="none" stroke="#3b82f6" stroke-width="2"/>
+                                    <circle cx="75" cy="25" r="2" fill="#10b981"/>
+                                    <text x="80" y="30" fill="#10b981" font-size="12">P</text>
+                                </svg>
+                            </div>
+                            <h4>点在圆上</h4>
+                            <p>当 d = r 时，点在圆上</p>
+                            <div class="condition">这种情况下，点是圆的组成部分</div>
+                        </div>
+
+                        <div class="position-card">
+                            <div class="position-visual">
+                                <svg width="150" height="150" viewBox="0 0 150 150">
+                                    <circle cx="75" cy="75" r="50" fill="none" stroke="#3b82f6" stroke-width="2"/>
+                                    <circle cx="75" cy="10" r="2" fill="#8b5cf6"/>
+                                    <text x="80" y="15" fill="#8b5cf6" font-size="12">P</text>
+                                </svg>
+                            </div>
+                            <h4>点在圆外</h4>
+                            <p>当 d > r 时，点在圆外</p>
+                            <div class="condition">从此点可以向圆引两条切线</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 直线和圆的位置关系 -->
+                <div class="line-circle-relations">
+                    <h3>📏 直线和圆的位置关系</h3>
+                    <div class="relation-types">
+                        <div class="relation-card">
+                            <div class="relation-visual">
+                                <svg width="200" height="150" viewBox="0 0 200 150">
+                                    <circle cx="100" cy="75" r="50" fill="none" stroke="#3b82f6" stroke-width="2"/>
+                                    <line x1="20" y1="20" x2="180" y2="130" stroke="#ef4444" stroke-width="2"/>
+                                    <circle cx="70" cy="55" r="2" fill="#ef4444"/>
+                                    <circle cx="130" cy="95" r="2" fill="#ef4444"/>
+                                    <text x="65" y="50" fill="#ef4444" font-size="10">A</text>
+                                    <text x="135" y="100" fill="#ef4444" font-size="10">B</text>
+                                </svg>
+                            </div>
+                            <h4>相交（割线）</h4>
+                            <p>直线与圆有两个交点</p>
+                            <div class="relation-condition">d < r（圆心到直线距离小于半径）</div>
+                            <div class="real-application">
+                                <strong>应用：</strong>隧道开挖、管道铺设
+                            </div>
+                        </div>
+
+                        <div class="relation-card">
+                            <div class="relation-visual">
+                                <svg width="200" height="150" viewBox="0 0 200 150">
+                                    <circle cx="100" cy="75" r="50" fill="none" stroke="#3b82f6" stroke-width="2"/>
+                                    <line x1="20" y1="25" x2="180" y2="25" stroke="#10b981" stroke-width="2"/>
+                                    <circle cx="100" cy="25" r="2" fill="#10b981"/>
+                                    <line x1="100" y1="25" x2="100" y2="75" stroke="#666" stroke-width="1" stroke-dasharray="2,2"/>
+                                    <text x="105" y="30" fill="#10b981" font-size="10">T</text>
+                                </svg>
+                            </div>
+                            <h4>相切（切线）</h4>
+                            <p>直线与圆有且仅有一个交点</p>
+                            <div class="relation-condition">d = r（圆心到直线距离等于半径）</div>
+                            <div class="real-application">
+                                <strong>应用：</strong>车轮与地面、传送带设计
+                            </div>
+                        </div>
+
+                        <div class="relation-card">
+                            <div class="relation-visual">
+                                <svg width="200" height="150" viewBox="0 0 200 150">
+                                    <circle cx="100" cy="75" r="50" fill="none" stroke="#3b82f6" stroke-width="2"/>
+                                    <line x1="20" y1="10" x2="180" y2="10" stroke="#8b5cf6" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <h4>相离</h4>
+                            <p>直线与圆没有交点</p>
+                            <div class="relation-condition">d > r（圆心到直线距离大于半径）</div>
+                            <div class="real-application">
+                                <strong>应用：</strong>安全距离设计、避障系统
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 切线的性质和应用 -->
+                <div class="tangent-properties">
+                    <h3>✨ 切线的重要性质</h3>
+                    <div class="properties-showcase">
+                        <div class="property-highlight">
+                            <div class="property-icon">⊥</div>
+                            <h4>垂直性质</h4>
+                            <p>圆的切线垂直于过切点的半径</p>
+                            <div class="property-proof">
+                                <strong>为什么？</strong>如果不垂直，那么圆心到直线的距离就会小于半径，直线就会与圆相交于两点，矛盾！
+                            </div>
+                        </div>
+
+                        <div class="property-highlight">
+                            <div class="property-icon">📏</div>
+                            <h4>切线长相等</h4>
+                            <p>从圆外一点向圆引的两条切线长相等</p>
+                            <div class="property-application">
+                                <strong>应用：</strong>设计师利用这个性质创造对称美的作品
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 切线的实际应用 -->
+                    <div class="tangent-applications">
+                        <h4>🚗 切线在生活中的应用</h4>
+                        <div class="applications-showcase">
+                            <div class="app-example">
+                                <div class="app-icon">🚗</div>
+                                <h5>汽车转弯</h5>
+                                <p>汽车沿圆弧路径行驶时，在任意瞬间的速度方向都是轨迹圆的切线方向</p>
+                            </div>
+                            <div class="app-example">
+                                <div class="app-icon">🎡</div>
+                                <h5>摩天轮设计</h5>
+                                <p>摩天轮座舱的底部始终保持水平，这是因为重力方向垂直于运动轨迹的切线</p>
+                            </div>
+                            <div class="app-example">
+                                <div class="app-icon">⚙️</div>
+                                <h5>齿轮传动</h5>
+                                <p>两个齿轮啮合时，接触点处的切线相同，这保证了平稳的动力传递</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第七部分：互动练习 -->
+        <section class="learning-section hidden" id="interactive">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">🎮 第七步：综合互动练习</h2>
+                    <p class="section-subtitle">运用所学知识，解决实际问题</p>
+                </div>
+
+        <!-- 第五部分：知识测试 -->
+        <section class="learning-section hidden" id="quiz">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">🏆 第五步：知识测试</h2>
+                    <p class="section-subtitle">检验学习成果的时候到了！</p>
+                </div>
+
+                <div class="quiz-container">
+                    <div class="quiz-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="quiz-progress-fill"></div>
+                        </div>
+                        <span class="progress-text">题目 <span id="current-question">0</span> / <span id="total-questions">5</span></span>
+                    </div>
+
+                    <div class="quiz-content" id="quiz-content">
+                        <!-- 题目内容将通过JavaScript动态生成 -->
+                    </div>
+
+                    <div class="quiz-results hidden" id="quiz-results">
+                        <div class="results-content">
+                            <div class="score-display">
+                                <div class="score-circle">
+                                    <span id="final-score">0</span>
+                                    <small>/ 100</small>
+                                </div>
+                                <div class="score-text">
+                                    <h3 id="score-title">太棒了！</h3>
+                                    <p id="score-message">你已经很好地掌握了圆的知识！</p>
+                                </div>
+                            </div>
+                            <div class="results-actions">
+                                <button class="btn-secondary" onclick="circleCoach.retakeQuiz()">重新测试</button>
+                                <button class="btn-primary" onclick="circleCoach.showCertificate()">获取学习证书</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 学习完成庆祝 -->
+        <section class="completion-section hidden" id="completion">
+            <div class="container">
+                <div class="completion-card">
+                    <div class="completion-animation">🎉</div>
+                    <h2>恭喜你完成了圆的学习！</h2>
+                    <p>你已经掌握了圆的基本概念、重要性质和关键公式。这些知识将为你的几何学习打下坚实的基础！</p>
+                    <div class="completion-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">5</div>
+                            <div class="stat-label">个知识点</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">4</div>
+                            <div class="stat-label">个公式</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">完成度</div>
+                        </div>
+                    </div>
+                    <div class="next-topics">
+                        <h4>接下来可以学习：</h4>
+                        <div class="topic-suggestions">
+                            <span class="topic-tag">三角形</span>
+                            <span class="topic-tag">四边形</span>
+                            <span class="topic-tag">立体几何</span>
+                        </div>
+                    </div>
+                    <div class="completion-actions">
+                        <button class="btn-secondary" onclick="window.location.href='index.html'">返回主页</button>
+                        <button class="btn-primary" onclick="circleCoach.shareProgress()">分享学习成果</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="circle-learning.js"></script>
+</body>
+</html>
